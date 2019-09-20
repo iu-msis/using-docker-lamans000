@@ -52,7 +52,9 @@
     </div>
 </div>
 </div>
+
 <div id = "randomBioSelection">
+  <form @submit.prevent='fetchPersons()'>
 <div id ="padding" class="card">
   <div id=""> <a v-bind:href = "person.picture.large"><img v-bind:src="person.picture.medium"></a> </div>
   <div id ="" class="card-body">
@@ -77,6 +79,9 @@
 
 
   </div>
+  <button type="submit" class="btn btn-primary">Submit Patient Info</button>
+
+</form>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
